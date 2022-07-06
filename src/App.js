@@ -6,11 +6,11 @@ import { urlApiProducts } from "./utils/constants";
 
 function App() {
   const products = useFetch(urlApiProducts);
-  
+
   return (
     <div className="App">
       <TopMenu />
-      <Products products={products}/>
+      <Products products={products} />
     </div>
   );
 }
