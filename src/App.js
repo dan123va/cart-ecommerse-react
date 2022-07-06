@@ -1,15 +1,10 @@
-import "./App.css";
-import { ToastContainer, toast } from "react-toastify";
+import React from "react";
+import TopMenu from "./components/TopMenu";
 
 function App() {
-  const openToast = () => {
-    toast("Este es mi toast");
-  };
-
   return (
     <div className="App">
-      <button onClick={openToast}>Click</button>
-      <ToastContainer />
+      <TopMenu />
     </div>
   );
 }
