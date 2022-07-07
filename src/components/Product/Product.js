@@ -5,7 +5,7 @@ import { Col, Card, Button } from "react-bootstrap";
 import "./Product.scss";
 
 export default function Product(props) {
-  const { product } = props;
+  const { product, addProductCart} = props;
 
   return (
     <Col xs={3} className="product">
@@ -15,7 +15,7 @@ export default function Product(props) {
           <Card.Title>{product.name}</Card.Title>
           <Card.Text>{product.extraInfo}</Card.Text>
           <Card.Text>{product.price.toFixed(2)} c / Unidad</Card.Text>
-          <Button>Añadir al carrito</Button>
+          <Button onClick={() => addProductCart(product.id, product.name)}>Añadir al carrito</Button>
         </Card.Body>
       </Card>
     </Col>
