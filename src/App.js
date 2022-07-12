@@ -36,7 +36,11 @@ function App() {
 
   return (
     <div className="App">
-      <TopMenu productsCart={productsCart} getProductsCart={getProductsCart} />
+      <TopMenu
+        productsCart={productsCart}
+        getProductsCart={getProductsCart}
+        products={products}
+      />
       <Products products={products} addProductCart={addProductCart} />
       <ToastContainer
         position="top-right"

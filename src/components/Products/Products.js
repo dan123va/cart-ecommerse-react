@@ -5,7 +5,7 @@ import Product from "../Product";
 
 export default function Products(props) {
   const {
-    products: { result, loading, error },
+    products: { result, loading },
     addProductCart,
   } = props;
 
